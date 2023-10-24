@@ -6,7 +6,7 @@ const products = [
     name: 'Basketball',
     description: 'Official NBA basketball.',
     price: 29.99,
-    image: 'basketball.jpg',
+    image: '/images/basketball.png',
     category: 'Sports Equipment',
   },
     {
@@ -14,7 +14,7 @@ const products = [
       name: 'Volleyball',
       description: 'Official volleyball used in international competitions.',
       price: 39.99,
-      image: 'volleyball.jpg',
+      image: '/images/volleyball.png',
       category: 'Sports Equipment',
     },
     {
@@ -22,7 +22,7 @@ const products = [
       name: 'Tennis Racket',
       description: 'Professional-grade tennis racket.',
       price: 89.99,
-      image: 'tennis-racket.jpg',
+      image: '/images/tennis-racket.png',
       category: 'Sports Equipment',
     },
     {
@@ -30,7 +30,7 @@ const products = [
       name: 'Baseball Bat',
       description: 'Official MLB baseball bat.',
       price: 49.99,
-      image: 'baseball-bat.jpg',
+      image: '/images/baseball-bat.png',
       category: 'Sports Equipment',
     },
     {
@@ -38,7 +38,7 @@ const products = [
       name: 'Golf Club Set',
       description: 'Complete set of golf clubs for beginners.',
       price: 199.99,
-      image: 'golf-club-set.jpg',
+      image: '/images/golf-club.png',
       category: 'Sports Equipment',
     },
     {
@@ -46,7 +46,7 @@ const products = [
       name: 'Hockey Stick',
       description: 'Professional-grade hockey stick.',
       price: 79.99,
-      image: 'hockey-stick.jpg',
+      image: '/images/hockey-stick.png',
       category: 'Sports Equipment',
     },
     {
@@ -54,7 +54,7 @@ const products = [
       name: 'Snowboard',
       description: 'High-quality snowboard for all skill levels.',
       price: 299.99,
-      image: 'snowboard.jpg',
+      image: '/images/snowboard.png',
       category: 'Sports Equipment',
     },
     {
@@ -62,7 +62,7 @@ const products = [
       name: 'Skateboard',
       description: 'Professional-grade skateboard for street and park skating.',
       price: 129.99,
-      image: 'skateboard.jpg',
+      image: '/images/skateboard.png',
       category: 'Sports Equipment',
     },
     {
@@ -70,7 +70,7 @@ const products = [
       name: 'Surfboard',
       description: 'High-performance surfboard for experienced surfers.',
       price: 499.99,
-      image: 'surfboard.jpg',
+      image: '/images/surfboard.png',
       category: 'Sports Equipment',
     },
     {
@@ -78,7 +78,7 @@ const products = [
       name: 'Boxing Gloves',
       description: 'Professional-grade boxing gloves for sparring and training.',
       price: 59.99,
-      image: 'boxing-gloves.jpg',
+      image: '/images/boxing-gloves.png',
       category: 'Sports Equipment',
     },
     {
@@ -86,7 +86,7 @@ const products = [
       name: 'MMA Gloves',
       description: 'Professional-grade MMA gloves for sparring and training.',
       price: 69.99,
-      image: 'mma-gloves.jpg',
+      image: '/images/mma-gloves.png',
       category: 'Sports Equipment',
     },
     {
@@ -94,7 +94,7 @@ const products = [
     name: 'Soccer Ball',
     description: 'FIFA-approved soccer ball.',
     price: 19.99,
-    image: 'soccer-ball.jpg',
+    image: '/images/soccer-ball.png',
     category: 'Sports Equipment',
   },
   // Add more products here...
@@ -107,7 +107,7 @@ const products = [
 //     name: `Product ${id}`,
 //     description: `Description for Product ${id}`,
 //     price: Math.floor(Math.random() * 100) + 10, // Generate random price between 10 and 100
-//     image: `product${id}.jpg`, // Adjust this based on your image filenames
+//     image: `product${id}.png`, // Adjust this based on your image filenames
 //     category: 'Other Category', // Adjust the category
 //   });
 // }
