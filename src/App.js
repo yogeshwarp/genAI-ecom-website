@@ -2,9 +2,12 @@
 
 import React, { useState } from 'react';
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import AuthService from './services/AuthService';
+import { useAuth0 } from '@auth0/auth0-react';
 import ProductList from './components/ProductList';
 import ProductDetail from './components/ProductDetail';
 import ShoppingCart from './components/ShoppingCart';
+import SignUp from './components/SignUp';
 import './App.css'; // Import the CSS file
 
 function App() {
