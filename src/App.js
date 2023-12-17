@@ -8,6 +8,7 @@ import ProductList from './components/ProductList';
 import ProductDetail from './components/ProductDetail';
 import ShoppingCart from './components/ShoppingCart';
 import SignUp from './components/SignUp';
+import Chatbot from './components/Chatbot';
 import './App.css'; // Import the CSS file
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
             element={<ShoppingCart cart={cart} removeFromCart={removeFromCart} />}
           />
         </Routes>
+        <Chatbot />
       </div>
     </BrowserRouter>
   );
