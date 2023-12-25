@@ -1,9 +1,9 @@
 // src/App.js
 
 import React, { useState } from 'react';
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AuthService from './services/AuthService';
-import { useAuth0 } from '@auth0/auth0-react';
+import Navigation from './components/Navigation';
 import ProductList from './components/ProductList';
 import ProductDetail from './components/ProductDetail';
 import ShoppingCart from './components/ShoppingCart';
@@ -24,21 +24,11 @@ function App() {
   };
 
   return (
+
+    <AuthService>
     <BrowserRouter>
       <div className="App">
-      <nav>
-            <ul>
-              <li>
-                <Link to="/" >Home</Link>
-              </li>
-              <li>
-                <Link to="/cart" >Cart</Link>
-              </li>
-              <li>
-                <Link to="/login" >Login</Link> {/* Add the Login link */}
-              </li>
-            </ul>
-          </nav>
+      <Navigation />
         <Routes>
           <Route
             path="/"
@@ -56,6 +46,7 @@ function App() {
         <Chatbot />
       </div>
     </BrowserRouter>
+    </AuthService>
   );
 }
 
