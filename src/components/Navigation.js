@@ -6,7 +6,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 import SignUp from './SignUp';
 
 const Navigation = () => {
-  const { loginWithRedirect, isAuthenticated, logout } = useAuth0();
+  const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
 
   const handleLogin = () => {
     if (!isAuthenticated) {
@@ -28,9 +28,13 @@ const Navigation = () => {
           <Link to="/cart">Cart</Link>
         </li>
         <li>
-          <button onClick={handleLogin}>
-            {isAuthenticated ? 'Logout' : 'Login'}
-          </button>
+          {isAuthenticated ? (
+            <span>
+              {user.email} | <button onClick={handleLogin}>Logout</button>
+            </span>
+          ) : (
+            <button onClick={handleLogin}>Login</button>
+          )}
         </li>
         <li>
             <SignUp />
