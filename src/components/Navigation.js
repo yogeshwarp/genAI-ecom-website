@@ -27,18 +27,20 @@ const Navigation = () => {
         <li>
           <Link to="/cart">Cart</Link>
         </li>
-        <li>
-          {isAuthenticated ? (
-            <span>
-              {user.email} | <button onClick={handleLogin}>Logout</button>
-            </span>
-          ) : (
-            <button onClick={handleLogin}>Login</button>
-          )}
-        </li>
-        <li>
-            <SignUp />
-        </li>
+        {isAuthenticated ? (
+          <li>
+            {user.email} | <button onClick={handleLogin}>Logout</button>
+          </li>
+        ) : (
+          <>
+            <li>
+              <button onClick={handleLogin}>Login</button>
+            </li>
+            <li>
+              <Link to="/signup">Sign Up</Link>
+            </li>
+          </>
+        )}
       </ul>
     </nav>
   );

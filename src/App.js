@@ -42,6 +42,7 @@ function App() {
             path="/cart"
             element={<ShoppingCart cart={cart} removeFromCart={removeFromCart} />}
           />
+           <Route path="/signup" element={<SignUp />} /> {/* Route for the SignUp component */}
         </Routes>
         <Chatbot />
       </div>
